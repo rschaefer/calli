@@ -1,4 +1,4 @@
-# Personenzähler. https://makecode.calliope.cc/#tutorial:https://github.com/rschaefer/calliope/AnleitungPersonenzaehler
+# Personenzähler.
 
 ```blocks
 basic.forever(function() {
