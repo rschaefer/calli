@@ -1,0 +1,65 @@
+# Personenzähler. https://makecode.calliope.cc/#tutorial:https://github.com/rschaefer/calliope/AnleitungPersonenzaehler
+
+```blocks
+basic.forever(function() {
+})
+
+basic.on start(function () {
+})
+
+let maximum: number
+maximum = 0
+
+input.onButtonEvent(Button.A, input.buttonEventClick(), function() {
+})
+
+if (true) {
+}
+
+
+
+grove.measureInCentimeters(DigitalPin.C16)
+
+basic.showNumber(0)
+basic.pause(100)
+basic.setLedColor(0xff0000)
+```
+
+## Personenzähler. @showdialog
+Programmiere einen Personenzähler.
+Zähle alle Personen welche den Klassenraum betreten. 
+
+## Step 1
+
+Definiere zwei ``||variables:Variablen||`` "Maximum" mit der maximalen Personenanzahl und Personenzähler" für die Anzahl der Personen.
+Initialisiere die Vaiablen mit dem passenden Wert, indem du ``||variables:setze ... auf ...||`` in den Block ``||basic:beim Start||`` setzt.
+
+
+## Step 2
+
+Nutze Knopf B um die Personen wie folgt zu zählen:
+``||input.Wenn Knopf B geklickt||`` dann ``||variables:ändere Personenzähler um 1|`` .
+
+## Step 3
+
+Gleiche die gezählten Personen mit der Variable "Maximum" ab. Sind noch nicht die maximale Anzahl an Personen im Raum, leuchtet die RGB-LED grün, sonst springt die RGB-LED auf rot.
+Nutze die Blöcke ``||logic:wenn wahr dann||``, ``||logic:Vergleiche||``, und ``||basic.setze Farbe auf ...||`` .
+
+## Step 3
+
+Teste dein Programm im Simulator.
+
+## Nutze den Ultraschallsensor. @showdialog
+
+Nutze nun den Ultraschallsensor um die Personen automatisch zu zählen. 
+Der Sensor wird am Anschluss C16 eingesteckt.
+![UltraschallSensor](/static/tutorials/sensor.png)
+
+Miss dauerhaft die Entfernung. Wird eine Entfernung unter 10 cm gemessen, erhöhe den Personenzähler um 1.
+
+
+## Step 1
+
+Miss dauerhaft die Entfernung. Wird eine Entfernung unter 10 cm gemessen, erhöhe den Personenzähler um 1.
+
+    
